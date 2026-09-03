@@ -1,4 +1,6 @@
-﻿using static System.Runtime.InteropServices.JavaScript.JSType;
+﻿using System.Diagnostics;
+using System.Drawing;
+using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace Assignment_03
 {
@@ -60,6 +62,16 @@ namespace Assignment_03
             Console.WriteLine("print 450 because the AddBonusPagesByRef method calls by reference, that works on the original value");
             #endregion
 
+            #region Question 8
+            //Write a method ReplaceArray(ref double[] prices) that replaces prices entirely with a
+            //new array { 10.0, 12.5, 15.0 }.Call it with your prices array and print prices.Length
+            //afterward.
+            ReplaceArray(ref prices);
+            Console.WriteLine(prices.Length);
+            #endregion
+
+
+
         }
         #region Question 3
         //Write a method called PrintWelcomeMessage that takes no parameters and prints
@@ -104,6 +116,16 @@ namespace Assignment_03
         public static void AddBonusPagesByRef(ref int pages)
         {
             pages += 50;
+        }
+        #endregion
+
+        #region Question 8
+        //Write a method ReplaceArray(ref double[] prices) that replaces prices entirely with a
+       // new array { 10.0, 12.5, 15.0 }. Call it with your prices array and print prices.Length
+       //afterward.
+       public static void ReplaceArray(ref double[] prices)
+        {
+            prices = new double[] { 10.0, 12.5, 15.0 };
         }
         #endregion
     }
