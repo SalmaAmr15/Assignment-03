@@ -51,6 +51,15 @@ namespace Assignment_03
             Console.WriteLine("print 20.5 because the ApplyDiscount method calls refrence type by value that copies the reference and works it so it changes the original array");
             #endregion
 
+            #region Question 7
+            //Rewrite the method from question 5 as AddBonusPagesByRef(ref int pages) using ref.
+            //Call it and print pages afterward. How is the result different from question 5 ?
+            int pages3 = 400;
+            AddBonusPagesByRef(ref pages3);
+            Console.WriteLine(pages3);
+            Console.WriteLine("print 450 because the AddBonusPagesByRef method calls by reference, that works on the original value");
+            #endregion
+
         }
         #region Question 3
         //Write a method called PrintWelcomeMessage that takes no parameters and prints
@@ -86,6 +95,15 @@ namespace Assignment_03
        public static void ApplyDiscount(double[] prices)
         {
             prices[0] -= 5;
+        }
+        #endregion
+
+        #region Question 7
+        //Rewrite the method from question 5 as AddBonusPagesByRef(ref int pages) using ref.
+        //Call it and print pages afterward.How is the result different from question 5?
+        public static void AddBonusPagesByRef(ref int pages)
+        {
+            pages += 50;
         }
         #endregion
     }
