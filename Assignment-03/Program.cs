@@ -79,7 +79,12 @@ namespace Assignment_03
             Console.WriteLine(price);
             #endregion
 
-
+            #region Question 10
+            //Write a method PrintBookInfo(string title, int pages = 300) where pages is optional. Call
+            //it once with only a title, and once passing both a title and pages.
+            PrintBookInfo("C#");
+            PrintBookInfo("C#", 100);
+            #endregion
         }
         #region Question 3
         //Write a method called PrintWelcomeMessage that takes no parameters and prints
@@ -153,6 +158,15 @@ namespace Assignment_03
                 price = 0;
                 return false;
             }
+        }
+        #endregion
+
+        #region Question 10
+        //Write a method PrintBookInfo(string title, int pages = 300) where pages is optional. Call
+        //it once with only a title, and once passing both a title and pages.
+        public static void PrintBookInfo(string title, int pages = 300)
+        {
+            Console.WriteLine($"Title: {title}, Pages: {pages}");
         }
         #endregion
     }
