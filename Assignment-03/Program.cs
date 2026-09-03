@@ -49,7 +49,7 @@ namespace Assignment_03
             ApplyDiscount(prices2);
             Console.WriteLine(prices2[0]);
             Console.WriteLine("print 20.5 because the ApplyDiscount method calls refrence type by value that copies the reference and works it so it changes the original array");
-           
+            #endregion
 
         }
         #region Question 3
