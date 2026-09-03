@@ -32,6 +32,14 @@ namespace Assignment_03
             PrintBookTitle("Clean Code");
             #endregion
 
+            #region Question 5
+            //Write a method AddBonusPages(int pages) that adds 50 to pages. Call it with a variable
+            //int pages = 400; and print pages afterward. What do you expect to see, and why?
+                        int pages = 400;
+            AddBonusPages(pages);
+            Console.WriteLine(pages);
+            Console.WriteLine("print 400  because the AddBonusPages method  calls by value, that copies the value and works on the copy");
+            #endregion
         }
         #region Question 3
         //Write a method called PrintWelcomeMessage that takes no parameters and prints
@@ -51,5 +59,13 @@ namespace Assignment_03
         }
         #endregion
 
+        #region Question 5
+        //Write a method AddBonusPages(int pages) that adds 50 to pages. Call it with a variable
+        //int pages = 400; and print pages afterward.What do you expect to see, and why?
+        public static void AddBonusPages(int pages)
+        {
+            pages += 50;
+        }
+        #endregion
     }
 }
