@@ -40,6 +40,17 @@ namespace Assignment_03
             Console.WriteLine(pages);
             Console.WriteLine("print 400  because the AddBonusPages method  calls by value, that copies the value and works on the copy");
             #endregion
+
+            #region Question 6
+            //Write a method ApplyDiscount(double[] prices) that subtracts 5 from prices[0]. Call it
+            //with double[] prices = { 25.5, 40.0 }; and print prices[0] afterward.What do you expect to
+            //see, and why?
+            double[] prices2 = { 25.5, 40.0 };
+            ApplyDiscount(prices2);
+            Console.WriteLine(prices2[0]);
+            Console.WriteLine("print 20.5 because the ApplyDiscount method calls refrence type by value that copies the reference and works it so it changes the original array");
+           
+
         }
         #region Question 3
         //Write a method called PrintWelcomeMessage that takes no parameters and prints
@@ -65,6 +76,16 @@ namespace Assignment_03
         public static void AddBonusPages(int pages)
         {
             pages += 50;
+        }
+        #endregion
+
+        #region Question 6
+        //Write a method ApplyDiscount(double[] prices) that subtracts 5 from prices[0]. Call it
+        //with double[] prices = { 25.5, 40.0 }; and print prices[0] afterward.What do you expect to
+       // see, and why?
+       public static void ApplyDiscount(double[] prices)
+        {
+            prices[0] -= 5;
         }
         #endregion
     }
