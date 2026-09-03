@@ -93,6 +93,13 @@ namespace Assignment_03
             PrintBookInfo(pages: 200, title: ".net");
             #endregion
 
+            #region Question 12
+            //Write a method PrintAllTitles(params string[] titles) that prints each title on its own line.
+            // Call it with three book titles.
+            PrintAllTitles("C#", "C", "C++");
+            #endregion
+
+
         }
         #region Question 3
         //Write a method called PrintWelcomeMessage that takes no parameters and prints
@@ -175,6 +182,18 @@ namespace Assignment_03
         public static void PrintBookInfo(string title, int pages = 300)
         {
             Console.WriteLine($"Title: {title}, Pages: {pages}");
+        }
+        #endregion
+
+        #region Question 12
+        //Write a method PrintAllTitles(params string[] titles) that prints each title on its own line.
+       // Call it with three book titles.
+        public static void PrintAllTitles(params string[] titles)
+        {
+            for ( int i=0; i < titles.Length; i++)
+            {
+                Console.WriteLine(titles[i]);
+            }
         }
         #endregion
     }
