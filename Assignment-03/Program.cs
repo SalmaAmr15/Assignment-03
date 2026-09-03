@@ -25,13 +25,29 @@ namespace Assignment_03
             //"Welcome to the Library!".Call it from Main.
             PrintWelcomeMessage();
             #endregion
+
+            #region Question 4
+            //Write a method PrintBookTitle(string title) that prints "Book title: " + title. Call it with
+            //"Clean Code".
+            PrintBookTitle("Clean Code");
+            #endregion
+
         }
         #region Question 3
         //Write a method called PrintWelcomeMessage that takes no parameters and prints
         //"Welcome to the Library!".Call it from Main.
-       public static void PrintWelcomeMessage()
+        public static void PrintWelcomeMessage()
         {
             Console.WriteLine("Welcome to the Library!");
+        }
+        #endregion
+
+        #region Question 4
+        //Write a method PrintBookTitle(string title) that prints "Book title: " + title. Call it with
+        //"Clean Code".
+        public static void PrintBookTitle(string title)
+        {
+            Console.WriteLine("Book title: " + title);
         }
         #endregion
 
